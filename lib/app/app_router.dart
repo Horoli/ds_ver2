@@ -1,8 +1,7 @@
-import 'package:ds_ver2/features/dashboard/presentation/screens/dashboard.dart';
-import '../features/auth/presentation/screens/login.dart';
+import 'package:ds_ver2/features/dashboard/public.dart';
+import 'package:ds_ver2/features/auth/public.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import '../features/auth/providers.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(

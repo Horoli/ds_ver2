@@ -1,8 +1,8 @@
 import 'package:ds_ver2/app/common/packages.dart';
 import 'package:ds_ver2/core/core.dart';
-import 'package:ds_ver2/features/auth/data.dart';
-import 'package:ds_ver2/features/auth/domain.dart';
-import 'package:ds_ver2/features/auth/presentation.dart';
+import 'package:ds_ver2/features/auth/private_data.dart';
+import 'package:ds_ver2/features/auth/private_domain.dart';
+import 'package:ds_ver2/features/auth/private_presentation.dart';
 
 // 외부 의존성
 final dioProvider = Provider((ref) => defaultDio);

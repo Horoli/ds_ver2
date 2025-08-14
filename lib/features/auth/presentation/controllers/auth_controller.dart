@@ -1,6 +1,6 @@
 import 'package:ds_ver2/core/session/session_provider.dart';
-import 'package:ds_ver2/features/auth/data.dart' show AuthRepository;
-import 'package:ds_ver2/features/auth/domain.dart' show AuthState;
+import 'package:ds_ver2/features/auth/private_data.dart' show AuthRepository;
+import 'package:ds_ver2/features/auth/private_domain.dart' show AuthState;
 import 'package:ds_ver2/app/common/packages.dart';
 
 class AuthController extends StateNotifier<AuthState> {

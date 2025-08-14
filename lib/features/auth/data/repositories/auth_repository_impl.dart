@@ -1,5 +1,5 @@
 import 'package:ds_ver2/core/network/api_client.dart';
-import 'package:ds_ver2/features/auth/data.dart';
+import 'package:ds_ver2/features/auth/private_data.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   final ApiClient api;

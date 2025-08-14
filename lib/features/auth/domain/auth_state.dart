@@ -1,5 +1,5 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-import '../data/models/user.dart';
+import 'package:ds_ver2/app/common/packages.dart';
+import 'package:ds_ver2/features/auth/private_data.dart';
 part 'auth_state.freezed.dart';
 
 @freezed
