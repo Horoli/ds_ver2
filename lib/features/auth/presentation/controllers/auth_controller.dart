@@ -1,7 +1,7 @@
 import 'package:ds_ver2/core/session/session_provider.dart';
-import 'package:ds_ver2/features/auth/data/auth_repository.dart';
-import 'package:ds_ver2/features/auth/domain/auth_state.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ds_ver2/features/auth/data.dart' show AuthRepository;
+import 'package:ds_ver2/features/auth/domain.dart' show AuthState;
+import 'package:ds_ver2/app/common/packages.dart';
 
 class AuthController extends StateNotifier<AuthState> {
   final AuthRepository repo;

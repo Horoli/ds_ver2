@@ -1,10 +1,8 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../core/network/api_client.dart';
-import 'data/auth_repository.dart';
-import 'data/auth_repository_impl.dart';
-import 'domain/auth_state.dart';
-import 'domain/entities/user.dart';
-import 'presentation/controllers/auth_controller.dart';
+import 'package:ds_ver2/app/common/packages.dart';
+import 'package:ds_ver2/core/core.dart';
+import 'package:ds_ver2/features/auth/data.dart';
+import 'package:ds_ver2/features/auth/domain.dart';
+import 'package:ds_ver2/features/auth/presentation.dart';
 
 // 외부 의존성
 final dioProvider = Provider((ref) => defaultDio);

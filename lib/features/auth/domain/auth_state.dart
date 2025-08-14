@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'entities/user.dart';
+import '../data/models/user.dart';
 part 'auth_state.freezed.dart';
 
 @freezed

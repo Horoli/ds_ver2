@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../features/auth/domain/entities/user.dart';
+import '../../features/auth/data/models/user.dart';
 
 class SessionState {
   final User? currentUser;
