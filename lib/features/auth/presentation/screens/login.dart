@@ -1,6 +1,6 @@
-import 'package:ds_ver2/features/auth/domain/auth_state.dart';
-import 'package:ds_ver2/features/auth/providers.dart';
+import 'package:ds_ver2/features/auth/private_domain.dart';
 import 'package:ds_ver2/app/common/packages.dart';
+import 'package:ds_ver2/features/auth/presentation/controllers/auth_controller.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});

@@ -1,23 +1,22 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../features/auth/data/models/user.dart';
+import 'package:ds_ver2/app/common/packages.dart';
 
 class SessionState {
-  final User? currentUser;
+  final String? id;
   final String? accessToken;
   final String? refreshToken;
   const SessionState({
-    this.currentUser,
+    this.id,
     this.accessToken,
     this.refreshToken,
   });
 
   SessionState copyWith({
-    User? currentUser,
+    String? id,
     String? accessToken,
     String? refreshToken,
   }) =>
       SessionState(
-        currentUser: currentUser ?? this.currentUser,
+        id: id ?? this.id,
         accessToken: accessToken ?? this.accessToken,
         refreshToken: refreshToken ?? this.refreshToken,
       );
@@ -25,9 +24,9 @@ class SessionState {
 
 class SessionController extends StateNotifier<SessionState> {
   SessionController() : super(const SessionState());
-  void setUser(User user, String? accessToken, String? refreshToken) {
+  void setUser(String id, String? accessToken, String? refreshToken) {
     state = state.copyWith(
-      currentUser: user,
+      id: id,
       accessToken: accessToken,
       refreshToken: refreshToken,
     );

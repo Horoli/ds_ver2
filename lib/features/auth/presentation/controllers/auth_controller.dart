@@ -1,21 +1,20 @@
-import 'package:ds_ver2/core/session/session_provider.dart';
-import 'package:ds_ver2/features/auth/private_data.dart' show AuthRepository;
-import 'package:ds_ver2/features/auth/private_domain.dart' show AuthState;
-import 'package:ds_ver2/app/common/packages.dart';
+import 'package:ds_ver2/features/auth/private_domain.dart'; // 배럴 한 경로만
+import 'package:ds_ver2/features/auth/providers/providers.dart';
+import 'package:ds_ver2/app/common/build_packages.dart';
 
-class AuthController extends StateNotifier<AuthState> {
-  final AuthRepository repo;
-  final Ref ref;
-  AuthController(this.ref, this.repo) : super(const AuthState.idle());
+part 'auth_controller.g.dart';
+
+@riverpod
+class AuthController extends _$AuthController {
+  @override
+  AuthState build() => const AuthState.idle();
 
   Future<void> login({required String id, required String pw}) async {
     state = const AuthState.loading();
     try {
+      final repo = ref.read(authRepositoryProvider);
       final user = await repo.login(id: id, password: pw);
-      // 세션 업데이트 (선택)
-      ref
-          .read(sessionProvider.notifier)
-          .setUser(user, user.accessToken, user.refreshToken);
+      // 세션 업데이트가 필요하다면 여기서 ref.read(sessionProvider.notifier) 사용
       state = AuthState.authed(user);
     } catch (e) {
       state = AuthState.error(e.toString());
@@ -24,9 +23,9 @@ class AuthController extends StateNotifier<AuthState> {
 
   Future<void> logout() async {
     try {
+      final repo = ref.read(authRepositoryProvider);
       await repo.logout();
     } finally {
-      ref.read(sessionProvider.notifier).clear();
       state = const AuthState.idle();
     }
   }

@@ -6,5 +6,5 @@
 export 'core/network/api_client.dart' show ApiClient, DioApiClient, defaultDio;
 
 // Auth (read-only)
-export 'features/auth/providers.dart' show currentUserProvider;
+export 'features/auth/providers/providers.dart' show currentUserProvider;
 export 'features/auth/data/models/user.dart' show User;
