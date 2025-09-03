@@ -6,7 +6,7 @@ part of 'providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$dioHash() => r'e3a54c743af0aeb6fe242d3716f858af14b8a879';
+String _$dioHash() => r'73778bbcad2e182bf0095e17cbf14364bdc058f6';
 
 /// 외부 의존성
 ///
@@ -24,7 +24,7 @@ final dioProvider = AutoDisposeProvider<Dio>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef DioRef = AutoDisposeProviderRef<Dio>;
-String _$apiClientHash() => r'24cb2a138e822461d6fbaadc2420b229b7551499';
+String _$apiClientHash() => r'7b5d8ea63158887f495f43e9b0fa8beff57a5328';
 
 /// See also [apiClient].
 @ProviderFor(apiClient)
@@ -40,7 +40,7 @@ final apiClientProvider = AutoDisposeProvider<ApiClient>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef ApiClientRef = AutoDisposeProviderRef<ApiClient>;
-String _$authRepositoryHash() => r'8e55ba9fda8a9882d4874ff0e6e6a7d45815ab2a';
+String _$authRepositoryHash() => r'a29da4b08eb0cdb974e68de07e1ba141716c30f7';
 
 /// Repository
 ///
@@ -59,7 +59,7 @@ final authRepositoryProvider = AutoDisposeProvider<AuthRepository>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef AuthRepositoryRef = AutoDisposeProviderRef<AuthRepository>;
-String _$currentUserHash() => r'c2d4c824af5d3626b6506fc55e818d4cfdc8b7da';
+String _$currentUserHash() => r'67f0e5718c495f4556a7d1212e3267e6c7e8c5b8';
 
 /// 읽기 전용 파생 Provider (다른 feature에서 import해 사용)
 ///

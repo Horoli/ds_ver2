@@ -1,5 +1,5 @@
 import 'package:ds_ver2/features/dashboard/public.dart';
-import 'package:ds_ver2/features/auth/public.dart';
+import 'package:ds_ver2/features/login/public.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 

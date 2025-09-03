@@ -1,5 +1,5 @@
-import 'package:ds_ver2/features/auth/private_domain.dart'; // 배럴 한 경로만
-import 'package:ds_ver2/features/auth/providers/providers.dart';
+import 'package:ds_ver2/features/login/private_domain.dart'; // 배럴 한 경로만
+import 'package:ds_ver2/features/login/providers/providers.dart';
 import 'package:ds_ver2/app/common/build_packages.dart';
 
 part 'auth_controller.g.dart';

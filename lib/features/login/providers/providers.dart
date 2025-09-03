@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:ds_ver2/features/auth/private_data.dart';
-import 'package:ds_ver2/features/auth/private_domain.dart';
-import 'package:ds_ver2/features/auth/private_presentation.dart';
+import 'package:ds_ver2/features/login/private_data.dart';
+import 'package:ds_ver2/features/login/private_domain.dart';
+import 'package:ds_ver2/features/login/private_presentation.dart';
 import 'package:ds_ver2/core/core.dart'; // defaultDio, ApiClient, DioApiClient 등
 // import 'package:ds_ver2/app/common/packages.dart';
 import 'package:ds_ver2/app/common/build_packages.dart';
@@ -29,7 +29,6 @@ User? currentUser(ref) {
     _ => null,
   };
 }
-
 
 // final dioProvider = Provider((ref) => defaultDio);
 // final apiClientProvider =

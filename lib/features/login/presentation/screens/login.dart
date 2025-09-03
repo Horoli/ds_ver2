@@ -1,6 +1,6 @@
-import 'package:ds_ver2/features/auth/private_domain.dart';
+import 'package:ds_ver2/features/login/private_domain.dart';
 import 'package:ds_ver2/app/common/packages.dart';
-import 'package:ds_ver2/features/auth/presentation/controllers/auth_controller.dart';
+import 'package:ds_ver2/features/login/presentation/controllers/auth_controller.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -27,6 +27,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final state = ref.watch(authControllerProvider);
+
     ref.listen<AuthState>(authControllerProvider, (prev, next) {
       if (next is AuthAuthed) {
         if (mounted) context.go('/dashboard');

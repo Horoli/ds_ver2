@@ -1,5 +1,5 @@
 import 'package:ds_ver2/app/common/build_packages.dart';
-import 'package:ds_ver2/features/auth/private_data.dart';
+import 'package:ds_ver2/features/login/private_data.dart';
 part 'auth_state.freezed.dart';
 
 @freezed
